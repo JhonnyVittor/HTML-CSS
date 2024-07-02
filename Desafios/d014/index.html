@@ -7,26 +7,44 @@
     <style>
         table{
             border-collapse: collapse;
+            
+            
         }
         th{
             font-family: Arial, Helvetica, sans-serif;
-
+            
         }
         td{
             text-align: center;
+            font-family: 'Courier New', Courier, monospace;
         }
         thead {
-            background-color:gray;
+            background-color:#808080;
+            color: white;
+        }
+        tbody {
+            background-color: white;
+        }
+        .cinza{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody > tr >th  {
+            background-color:#808080;
+            text-align: left;
+            color: white;
+        }
+        .final{
+            background-color: #808080;
+            color: white;
         }
         th,td{
-        border: 1px solid black;
+        border: 2px solid black;
         padding: 8px;
         width:90px ;
         }
-        .esquerda {
-            text-align: left;
-            
-        }
+        
+        
     </style>
 </head>
 <body>
@@ -46,7 +64,7 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <td class="cinza" rowspan="4">Exatas</td>
                 <td>Matematica</td>
                 <td>0.0</td>   
                 <td>0.0</td>   
@@ -71,13 +89,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <div class="esquerda">
-                    <th colspan="4">Medias de Exatas</th>
-                    <td>0.0</td>
-                </div>
+                <th colspan="4">Medias de Exatas</th>
+                <td class="final">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <td class="cinza" rowspan="2">Humanas</td>
                     <td>Historia</td>
                     <td>0.0</td>
                     <td>0.0</td>
@@ -90,12 +106,9 @@
                 </tr>
             </tr>
             <tr>
-                <div class="esquerda">
                     <th colspan="4">Medias de Humanas</th>
-                    <td>0.0</td>
-                </div>
-            </tr>
-            
+                    <td class="final">0.0</td>
+            </tr> 
         </tbody>
     </table>
 </body>
